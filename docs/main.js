@@ -38804,8 +38804,8 @@ var AddCharacterComponent = class _AddCharacterComponent {
     if (this.character.name.length === 0)
       return;
     this.onNewCharacter.emit(__spreadValues({}, this.character));
-    this.character.name = "reseteoName";
-    this.character.power = 10;
+    this.character.name = "";
+    this.character.power = 0;
   }
   static {
     this.\u0275fac = function AddCharacterComponent_Factory(t) {

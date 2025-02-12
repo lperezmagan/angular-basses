@@ -1,0 +1,38 @@
+<h1>DBZ PERSONAJES</h1>
+<hr>
+
+<div class="row">
+
+  <div class="col">
+    <!-- listado -->
+    <!-- (onDelete)="dbzService.onDeleteCharacter($event)" -->
+    <dbz-list
+      [characterList]="characters"
+      (onDelete)="onDeleteCharacter($event)"
+      >
+    </dbz-list>
+
+  </div>
+
+  <div class="col">
+    <!-- formulario -->
+    <dbz-add-character
+    (onNewCharacter)="onNewCharacter($event)">
+    </dbz-add-character>
+  </div>
+
+</div>
+
+<!-- <div class="col"> -->
+  <!-- listado -->
+  <!-- <dbz-list
+    [characterList]="characters"
+    (onDelete)="onDeleteCharacter($event)"
+    >
+  </dbz-list>
+</div> -->
+<!-- <div class="col"> -->
+  <!-- formulario -->
+  <!-- <dbz-add-character (onNewCharacter)="onNewCharacter($event)">
+  </dbz-add-character> -->
+<!-- </div> -->

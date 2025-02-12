@@ -33,7 +33,7 @@ export class AddCharacterComponent {
 
     // cuando se envíen los datos
     // quiero resetear los valores de los inputs
-    this.character.name = 'reseteoName';
-    this.character.power = 10;
+    this.character.name = '';
+    this.character.power = 0;
   }
 }
